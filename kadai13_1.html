@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- link -->
+  <link href="asset/styles/tailwind.min.css" rel="stylesheet">
+
+  <title>php1 - kadai13_1</title>
+</head>
+<body class="bg-gray-50">
+<div class="wrapper box-border">
+
+<header class="bg-green-500">
+  <div class="container mx-auto py-5">
+    <h1 class="text-l text-white mb-6">サーバーサイドスクリプト演習１</h1>
+    <h2 class="text-3xl text-white">Ajaxを使った動的なサイトコンテンツの表示</h2>
+  </div><!--/.container-->
+</header>
+
+<main>
+  <div class="container mx-auto py-20">
+    <h3 class="text-xl border-b-2 border-green-400 pb-2 mb-10">Resas APIの利用</h3>
+
+    <div class="flex">
+
+      <div class="w-3/12 mr-5">
+        <label for="pref" class="block">都道府県の選択</label>
+        <select id="pref" class="w-full bg-white text-md p-2 border-2 border-gray-200 focus:border-green-200 rounded-md outline-none">
+          <option value="">以下から選択してください</option>
+        </select>
+      </div>
+
+      <div class="flex-grow flex flex-col w-9/12">
+        <h3>市区町村一覧</h3>
+        <div id="city" class="flex-1 grid grid-cols-5 gap-4 bg-white text-lg p-2 border-2 border-gray-200 rounded-md"></div>
+        
+      </div>
+
+    </div>
+
+  </div><!--/.container-->
+</main>
+
+</div><!--/.wrapper-->
+
+<!-- script -->
+<script src="asset/scripts/kadai13.js"></script>
+</body>
+</html>
